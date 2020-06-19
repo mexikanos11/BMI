@@ -1,0 +1,124 @@
+html {
+  box-sizing: border-box;
+}
+
+.body {
+  font-family: 'Lato', sans-serif;
+  background-color: #00ffdd;
+}
+
+*, ::after, ::before {
+  box-sizing: inherit;
+}
+
+.allPage {
+  max-width: 1000px;
+  text-align: center;
+}
+
+.firstBox {
+  background-color: red;
+  width: 200px;
+  height: 200px;
+  margin: 20px auto;
+  font-size: 40px;
+  padding-top: 60px;
+  border: gold groove;
+  border-width: 10px 20px;
+}
+
+.secoundBox {
+  background-color: #0084ff;
+  width: 200px;
+  height: 200px;
+  margin: 20px auto;
+  border: gold 20px solid;
+  border-radius: 25px 10px 25px 10px;
+  font-size: 40px;
+  padding-top: 60px;
+}
+
+.thirdBox {
+  background-color: #00ff73;
+  width: 200px;
+  height: 200px;
+  margin: 20px auto;
+  border: rgb(0, 4, 255) 20px solid;
+  font-size: 40px;
+  padding-top: 60px;
+  border-bottom: indigo dotted 5px;
+  border-top: 25px dashed;
+  border-right: ridge 15px rgb(255, 0, 0);
+}
+
+.table {
+  width: 200px;
+  border-collapse: collapse;
+  font-size: 25px;
+  margin: 150px;
+}
+
+.tableCell {
+  border: 3px solid #440612;
+  padding: 10px;
+  background-color: rgb(11, 189, 189);
+}
+
+.tableCell:nth-child(even) {
+  background-color: #0fc9d6;
+}
+
+.tableCellEnd {
+  text-align: right;
+}
+
+.tableTitle {
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.footer {
+  background-color: darkorange;
+}
+
+.box {
+  margin-top: 200px;
+}
+
+h1 {
+  margin: 100px;
+  font-weight: bold;
+  font-size: 40px;
+  color: #444444;
+  background: #00ffdd;
+  text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;
+}
+
+.links {
+  text-decoration: none;
+}
+
+.list {
+  list-style-type: none;
+  text-align: left;
+  margin-left: 40%;
+}
+
+#fifthSection {
+  line-height: 50;
+}
+
+.newBackground {
+  background-color: darksalmon;
+}
+
+.links:hover {
+  border-bottom: 1px solid;
+}
+
+.tableCell:hover {
+  transform: scale(1.2);
+  transition: 0.2s;
+  border: 3px solid #440612;
+}
