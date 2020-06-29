@@ -18,21 +18,29 @@
   </head>
 
   <body>
-    <form>
-      <legend>Przelicznik walut</legend>
+    <form class="js-form">
+      <legend class="form-header">Przelicznik walut</legend>
       <p>
         <label
-          >Złoty
-          <input type="number" min="0" />
+          >Ilość zł
+          <input class="js-amount" type="number" min="0" step="0.01" required/>
         </label>
       </p>
 
       <p>
         <label
-          >Złoty
-          <input type="number" min="0" />
+          >Waluta wymiany
+         <select>
+           <option selected value="EUR">EUR</option>
+          <option value="USD">USD</option>
+          <option value="GBP">GBP</option>
+         </select>
         </label>
       </p>
+
+      <button class="js-form">Przelicz</button>
+
+      <p class="js-result"></p>
     </form>
   </body>
 </html>
