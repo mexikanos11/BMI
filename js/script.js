@@ -1,17 +1,34 @@
+let formElement = document.querySelector(".js-form");
+let amountElement = document.querySelector(".js-amount");
+let currencyElement = document.querySelector(".js-currency");
+let resultElement = document.querySelector(".js-result");
 
-console.log("czesc")
+let rateEUR = 4.431;
+let rateGBP = 4.499;
+let rateUSD = 4.21;
 
+formElement.addEventListener ("submit", (event) => {
+  event.preventDefault();
 
-let formElement = document.querySelector (".js-form");
-let amountElement = document.querySelector (".js-amount");
-let currencyElement = document.querySelector (".js-currency");
-let resultElement = document.querySelector (".js-result");
+  let amount = +amountElement.value;
+  let currency = currencyElement.value;
 
-let EUR = 4.431;
-let GBP = 4.499;
-let USD = 4.210;
+  let result;
 
+  switch (currency) {
+    case "EUR":
+      result = amount / rateEUR;
+      break;
 
+    case "GBP":
+      result = amount / rateGBP;
+      break;
 
+    case "USD":
+      result = amount / rateUSD;
+      break;
+  }
 
-form.addEventListener("submit") , (event) => {event.preventDefault();
+  resultElement.innerHTML =
+    " $ {amount.toFixed(2)} PLN = <strong>${result.toFixed(2)} ${currency} </strong>";
+});
